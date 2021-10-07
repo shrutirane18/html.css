@@ -1,0 +1,97 @@
+body{
+    background-color: whitesmoke;
+  } 
+  .img-logo{
+      width: 200px;
+      height: 300px;
+  }
+  /* cSS Reset */
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  /*css variables */
+  :root{
+      --navbar-height: 59px
+  }
+  /* navigation bar */
+  #navbar{
+      display: flex;
+      align-items: center;
+  }
+  /*navigation bar: logo and image*/
+#logo{
+ margin: 10px 20px;
+}
+#logo img{
+   height: 54px;
+   margin: 40px 40px;
+}
+
+  /*navigation bar: list styling*/
+#navbar{
+    position: relative;
+}
+  #navbar ul{
+      display: flex;
+  }
+#navbar::before{
+   content: "";
+   background-color: peru;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.4;
+
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 200px 400px;;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+   background: url('./img/humanity.jpg') no-repeat center center/cover;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.6;
+   
+}
+#home h1{
+    color: black;
+    text-align:center;
+
+}
+/* utility classes */
+.h-primary{
+    font-size: 4 rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(133, 20, 20);
+    color: white;
+    margin: 17px;
+}
